@@ -1,0 +1,32 @@
+language: node_js
+cache:
+  directories:
+  - node_modules
+  - ~/.npm
+
+node_js:
+  - '12'
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+
+notifications:
+  slack: wdmespacio:ot0HtnPmr8RCydf500ZuO9h3
+  email:
+    recipients:
+      - briangerardo114@gamil.com
+    on_success: always
+    on_failure: always
+
+deploy:
+  provider: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 99786223-4821-4d2c-ab9d-8257eb4e0514
+  app: platzi-store-backend-wdb
+  on:
+    repo: WDB-Team/platzi-store-backend
+
