@@ -14,7 +14,8 @@ script:
   - yarn test
 
 notifications:
-  slack: wdmespacio:ot0HtnPmr8RCydf500ZuO9h3
+  slack:
+    secure: "SYb7nq80ybYgfHNJI3Sf0U6eBc78dHWQrd6XuO7Z1DML7fkZzrV/nCX7ZHbvngZA8aEO3mZUEPhs62h8r7mLkyp+4hSQNBGQsWQW0mS8dA84XUQfhbjWZQ7Hmb/FiMK+GjtF01I010VchW925I/wHMrE4k2U/IBp8MxU2gqoB0af3wyYM7lqvh4Wh8P49JdTevezrMgOnbw2nRE38EGV+789QjVKISHx+ioMB96met50M3lhCdiH37abVRGjdseeNIWq6XN8IMXFR8kxpsVCcT0d4z42aqTHcynLIu4DmVfnTDIk0BKuMuyMKTuL+DGl0hSoXEPxrq5HyEfHnYu94pf1gCtsokRhgo/cZeqCDy7pSNtmMuKG3QVYxA8/mXVY0gYzRm+fk9Mqlx+vrz0ouZR2zgv54ZN1xGuLKimd2nT4UBSzIvq2Em2ykSxGs9VItdoJy5CxkYA6bjMVyRxlJwLCsJ8bzpVf2wP36KGhT40WBefGPo30AWuIvrefIkQtRLvucEggasiBMMqgWXm2Zm5VKTDK+qWZ5GZa0IU9SLq/MP18btN/IiZK/mQeoe5DmjOdmoWN/UgZ9i6vBOTdI0XM41Z7gehLIUBtJjI4/+xp/faAVXG6rgtM9a36fBjt12HSp9DS14hf4NuGA/KnO8LPKE+GOIndjYCksaLR9fE="
   email:
     recipients:
       - briangerardo114@gamil.com
@@ -25,7 +26,8 @@ deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 99786223-4821-4d2c-ab9d-8257eb4e0514
+  api_key:
+    secure: "EDUIDqaE7ZMuGRn2S6bYCgD1JAbO/Av2EaqR8xcUZlJq4RAsurTlpQbnUXjg+eROe0PIHnnCM0WUpi/4MjQTrTxPIAA2y/+eXzK6bP7GEnpFlctmL71z1XusDw/Msrj93BxL0GKBc/LSqcR+b994EtKA8VkHQfWDE6pV1IFH+hm5pqKtnIAAg+/R0+QXRw18w3pASrK7tpLkY/Cpeo16YwYUBkFAZeuXem4tkO2rAOXOhWCc3jsRyFImhzNoN76+Fw5J7xV2Ymr9sMn6gtm2IGl78v05YNL59PXIw9oe84wOFwSYCsu8U9xLFtPErB2fjkpiChjJ1OUIn1fUdsH7iL7eFeCjhw4Fn4aMhd+jSZlvFbi6H0bivqfdRVSV8+ZTqkLf/lS1egdDtTK0Eob7XlLdL76xsWcoK0zJcawU4YpSehauLor+2PL6xPgIQSk6Yokwzke4sd8xBbzD8s4AdbcvFcv9St5ZwyoSWaCjoNbKBP02XxYyBLIqiAnA66zdCIcT/7j4LgWfaoClhK9aPdNPHfhqV+EbCx8KOxiidIoD3SE3BDEHtPMr/BntU8VN+f662zdp4Mi5MJrOafvnO8Tjx/kGFJciVEg9VVi/yk6siLKEcpxpHAdU+vhypvbqFD/qBam7Xy0TiUTlx4EPtzhiin/3bDWOuKk0AyVLDGw="
   app: platzi-store-backend-wdb
   on:
     repo: WDB-Team/platzi-store-backend
